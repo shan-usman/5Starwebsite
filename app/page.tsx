@@ -7,6 +7,9 @@ import {
   PhoneIcon,
   EnvelopeIcon,
   MapPinIcon,
+  WrenchScrewdriverIcon,
+  ArrowPathIcon,
+  BoltIcon,  // Add this
 } from '@heroicons/react/24/outline';
 
 export default function Home() {
@@ -157,6 +160,140 @@ export default function Home() {
                 <p className="font-medium">Polishing Compounds</p>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Section - Denting, Painting, Body Work, Mechanic, Electric */}
+      <section className="py-16 bg-gradient-to-br from-gray-900 to-gray-800 text-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">
+              Complete Auto Care Services
+            </h2>
+            <p className="text-gray-300 text-lg max-w-3xl mx-auto">
+              One-stop solution for all your vehicle repair and maintenance needs using premium Autolux products
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-6 mb-12">
+            {/* Body Shop Work */}
+            <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700 hover:border-yellow-500 transition-all duration-300 group">
+              <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <WrenchScrewdriverIcon className="h-8 w-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3">Body Shop Work</h3>
+              <p className="text-gray-300 text-center text-sm">
+                Complete body repair and restoration services using advanced equipment and techniques.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-gray-400">
+                <li className="flex items-center justify-center gap-2">✓ Frame Straightening</li>
+                <li className="flex items-center justify-center gap-2">✓ Panel Replacement</li>
+                <li className="flex items-center justify-center gap-2">✓ Collision Repair</li>
+              </ul>
+            </div>
+
+            {/* Denting */}
+            <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700 hover:border-yellow-500 transition-all duration-300 group">
+              <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <WrenchScrewdriverIcon className="h-8 w-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3">Denting</h3>
+              <p className="text-gray-300 text-center text-sm">
+                {`Expert dent removal and panel beating to restore your vehicle's original shape.`}
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-gray-400">
+                <li className="flex items-center justify-center gap-2">✓ Paintless Dent Repair</li>
+                <li className="flex items-center justify-center gap-2">✓ Major Dent Removal</li>
+                <li className="flex items-center justify-center gap-2">✓ Hail Damage Repair</li>
+              </ul>
+            </div>
+
+            {/* Painting */}
+            <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700 hover:border-yellow-500 transition-all duration-300 group">
+              <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <PaintBrushIcon className="h-8 w-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3">Painting</h3>
+              <p className="text-gray-300 text-center text-sm">
+                Showroom-quality finish using Autolux premium paints with color matching technology.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-gray-400">
+                <li className="flex items-center justify-center gap-2">✓ 100% Color Match</li>
+                <li className="flex items-center justify-center gap-2">✓ Multi-Layer Application</li>
+                <li className="flex items-center justify-center gap-2">✓ High-Gloss Clear Coat</li>
+              </ul>
+            </div>
+
+            {/* Mechanic */}
+            <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700 hover:border-yellow-500 transition-all duration-300 group">
+              <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <WrenchScrewdriverIcon className="h-8 w-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3">Mechanic</h3>
+              <p className="text-gray-300 text-center text-sm">
+                Professional mechanical repairs and maintenance for all vehicle makes and models.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-gray-400">
+                <li className="flex items-center justify-center gap-2">✓ Engine Diagnostics</li>
+                <li className="flex items-center justify-center gap-2">✓ Brake & Suspension</li>
+                <li className="flex items-center justify-center gap-2">✓ Oil Change & Service</li>
+              </ul>
+            </div>
+
+            {/* Electric */}
+            <div className="bg-gray-800/50 rounded-xl p-6 backdrop-blur-sm border border-gray-700 hover:border-yellow-500 transition-all duration-300 group">
+              <div className="bg-yellow-500 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 group-hover:scale-110 transition-transform duration-300">
+                <BoltIcon className="h-8 w-8 text-gray-900" />
+              </div>
+              <h3 className="text-xl font-semibold text-center mb-3">Electric</h3>
+              <p className="text-gray-300 text-center text-sm">
+                Expert electrical diagnostics and repair for all vehicle electrical systems.
+              </p>
+              <ul className="mt-4 space-y-2 text-sm text-gray-400">
+                <li className="flex items-center justify-center gap-2">✓ Wiring & Lighting</li>
+                <li className="flex items-center justify-center gap-2">✓ Battery & Alternator</li>
+                <li className="flex items-center justify-center gap-2">✓ AC & Sensors</li>
+              </ul>
+            </div>
+          </div>
+
+          {/* Process Steps */}
+          <div className="mt-12">
+            <h3 className="text-2xl font-semibold text-center mb-8 text-yellow-400">Our Work Process</h3>
+            <div className="grid grid-cols-1 md:grid-cols-4 gap-6">
+              <div className="text-center">
+                <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-xl">1</div>
+                <p className="font-medium">Inspection & Assessment</p>
+                <p className="text-gray-400 text-sm">Detailed damage evaluation</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-xl">2</div>
+                <p className="font-medium">Repair & Preparation</p>
+                <p className="text-gray-400 text-sm">Denting & surface prep</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-xl">3</div>
+                <p className="font-medium">Primer & Paint</p>
+                <p className="text-gray-400 text-sm">Primer + color application</p>
+              </div>
+              <div className="text-center">
+                <div className="bg-blue-600 w-12 h-12 rounded-full flex items-center justify-center mx-auto mb-3 font-bold text-xl">4</div>
+                <p className="font-medium">Clear Coat & QC</p>
+                <p className="text-gray-400 text-sm">Final finish & quality check</p>
+              </div>
+            </div>
+          </div>
+
+          {/* CTA Button */}
+          <div className="text-center mt-12">
+            <a
+              href="#contact"
+              className="inline-flex items-center gap-2 bg-yellow-500 text-gray-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300"
+            >
+              Book Your Appointment Today
+              <ArrowPathIcon className="h-5 w-5" />
+            </a>
           </div>
         </div>
       </section>
