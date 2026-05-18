@@ -1,7 +1,8 @@
 // app/layout.tsx
 import type { Metadata } from 'next';
 import { Inter } from 'next/font/google';
-import './globals.css';
+import './globals.css'
+import Image from 'next/image';
 
 const inter = Inter({ subsets: ['latin'] });
 
@@ -33,8 +34,8 @@ export default function RootLayout({
         <nav className="bg-white shadow-lg sticky top-0 z-50">
           <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div className="flex justify-between items-center h-16">
-              <div className="flex items-center">
-                <span className="text-xl font-bold text-blue-600">5⭐ Auto Paints</span>
+              <div className="h-full flex items-center">
+                <Image src={"/title.png"} className='h-[100px] w-[180px]' alt={"title"} />
               </div>
               <div className="hidden md:flex space-x-8">
                 <a href="/" className="text-gray-700 hover:text-blue-600">Home</a>
