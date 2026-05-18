@@ -23,6 +23,9 @@ export default function Home() {
             <p className="text-xl md:text-2xl mb-8">
               Premium Quality Automotive Paints & Supplies for Professional Garages
             </p>
+            <p className="text-base md:text-xl mb-8">
+              {`If you are looking for local dealers or paint matching and repair paints for your vehicle's in the UAE, you can explore supplier like the FIVE STAR AUTO SALE OF PAINTS`}
+            </p>
             <a
               href="#contact"
               className="bg-yellow-500 text-blue-900 px-8 py-3 rounded-lg font-semibold hover:bg-yellow-400 transition duration-300 inline-block"
@@ -66,9 +69,9 @@ export default function Home() {
       {/* Products Section */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-4">Our Premium Products</h2>
+          <h2 className="text-3xl font-bold text-center mb-4">Autolux Premium Products</h2>
           <p className="text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            Complete range of automotive painting supplies for professional garages
+            Autolux is a premium brand of automotive refinishes and car paints known for high-quality, durability, and accurate color matching. The brand supplies a full ecosystem of auto-body products.
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
@@ -76,7 +79,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48 bg-gray-200">
                 <Image
-                  src={"/image1.png"}
+                  src={"/image1.jpeg"}
                   alt="Premium Base Coat Paint"
                   fill
                   className="object-cover"
@@ -92,7 +95,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48 bg-gray-200">
                 <Image
-                  src={"/image2.png"}
+                  src={"/image2.jpeg"}
                   alt="Clear Coat Paint"
                   fill
                   className="object-cover"
@@ -124,7 +127,7 @@ export default function Home() {
             <div className="bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="relative h-48 bg-gray-200">
                 <Image
-                  src={"/image4.png"}
+                  src={"/image4.jpeg"}
                   alt="Body Filler"
                   fill
                   className="object-cover"
