@@ -20,6 +20,9 @@ export const metadata: Metadata = {
   robots: 'index, follow',
   authors: [{ name: '5 Star Auto Paints' }],
   viewport: 'width=device-width, initial-scale=1',
+  verification: {
+    google: 't4yvhY9c4Nnj0C1S8aEccF15I3TNsQBhsJvNlvQ9RHM',
+  },
 };
 
 export default function RootLayout({
